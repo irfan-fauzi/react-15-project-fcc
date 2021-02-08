@@ -1,18 +1,18 @@
-
+import React from 'react';
 import styled from 'styled-components';
 import PersonList from './PersonList';
 import { FriendProvider } from './State';
 
 
 function Birthday() {
-
-
+  
   return (
     <FriendProvider>
       <BirthdayPage>
-        <h1>Birthday page</h1>
+        <h1 className="birthday-title">
+          Birthday page
+        </h1>
         <CardContact>
-          <h4>5 bithday today</h4>
           <PersonList />
         </CardContact>
       </BirthdayPage>
@@ -20,11 +20,13 @@ function Birthday() {
   )
 }
 
+
+
 const CardContact = styled.div`
       max-width : 500px;
       margin : 2rem auto;
       padding : 10px;
-    
+      box-shadow: 10px 10px 16px -1px rgba(0,0,0,0.1);
       background: #ffff;
       `;
 const BirthdayPage = styled.div`

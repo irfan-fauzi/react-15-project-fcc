@@ -1,11 +1,16 @@
 import React from 'react'
+import Tours from './Tours';
+import { TourProvider } from './Context';
 
-const Tours = () => {
+
+const index = () => {
   return (
-    <div>
-      <h1>Tours page</h1>
-    </div>
+    <TourProvider>
+      <>
+        <Tours />
+      </>
+    </TourProvider>
   )
 }
 
-export default Tours
+export default index

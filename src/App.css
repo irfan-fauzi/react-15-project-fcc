@@ -19,3 +19,44 @@ img{
 .project-title{
   margin-bottom: 2rem;
 }
+.birthday-title{
+  text-align: center;
+  color: aliceblue;
+  
+}
+.container-tours{
+  /* border: red solid 1px; */
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
+}
+.img-wrap{
+  height: 280px;
+  overflow: hidden;
+}
+.container-tours .tour-cards{
+  border: rgb(232, 222, 222) solid 1px;
+  margin-bottom: 1rem;
+  padding: 10px;
+  box-shadow: 10px 10px 16px -9px rgba(0,0,0,0.7);
+}
+.container-tours p {
+  color: rgb(73, 102, 111);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.container-tours h3{
+  color: rgb(68, 64, 64);
+}
+.container-tours .read{
+  color: rgb(0, 102, 255);
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.container-tours .price{
+  color: rgb(0, 102, 255);
+}
