@@ -15,5 +15,7 @@ export const Card = styled.div`
       box-shadow: 11px 13px 10px -7px rgba(186,164,164,0.75);
       &:hover{
         transform : scale(1.1);
+        background : #ffff;
+        color: salmon;
       }
       `;

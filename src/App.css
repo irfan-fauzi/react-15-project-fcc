@@ -114,8 +114,33 @@ img{
 .qa .fas{
   cursor: pointer;
 }
+.grid-title{
+  text-align: center;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.god-menu img{
+  display: inline-block;
+}
+.god-menu .card{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  border: gold solid 2px;
+  
+  padding: 10px;
+  gap: 10px;
+  
+}
 @media only screen and (max-width: 868px) {
   .qa{
+    grid-template-columns: 1fr;
+  }
+  .god-menu .card{
     grid-template-columns: 1fr;
   }
 }

@@ -25,6 +25,11 @@ const HomeIndex = () => {
               <h3>Question</h3>
             </Card>
           </Link>
+          <Link to="/food">
+            <Card>
+              <h3>Food</h3>
+            </Card>
+          </Link>
         </CardContainer>
       </div>
     </div>

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Birthday from '../src/Page/Projects/Birthday-reminder/index';
 import Tours from './Page/Projects/Tours';
 import question from './Page/Projects/Q&A/question';
+import Food from './Page/Projects/Food';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/birthday" component={Birthday} />
           <Route path="/tours" component={Tours} />
           <Route path="/qa" component={question} />
+          <Route path="/food" component={Food} />
         </Switch>
       </div>
     </Router>
