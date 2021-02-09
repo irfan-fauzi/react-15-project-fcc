@@ -5,7 +5,7 @@ import ListTour from './ListTour';
 
 
 const Tours = () => {
-  const [tour, setTour, loading] = useContext(TourContext);
+  const [tour, loading] = useContext(TourContext);
   console.log(tour)
   if (loading) {
     return (

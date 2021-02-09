@@ -20,6 +20,11 @@ const HomeIndex = () => {
               <h3>Tours</h3>
             </Card>
           </Link>
+          <Link to="/qa">
+            <Card>
+              <h3>Question</h3>
+            </Card>
+          </Link>
         </CardContainer>
       </div>
     </div>

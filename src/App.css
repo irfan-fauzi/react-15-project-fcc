@@ -60,3 +60,62 @@ img{
 .container-tours .price{
   color: rgb(0, 102, 255);
 }
+.god-qa{
+  height: 100vh;
+  display: flex;
+
+}
+.qa{
+  /* border: rgb(98, 0, 255) solid 1px; */
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  gap: 1rem;
+  color: rgb(172, 170, 170);
+  background-image: linear-gradient(to left, #2bb7da, #00c2d4, #00cbbb, #00d192, #31d35c);
+  border-radius: 5px;
+}
+.qa .card{
+  margin-bottom: 10px;
+  /* border: rgb(64, 18, 90) solid 1px; */
+  padding: 10px;
+  background: #ffff;
+  color: #00c2d4;
+  border-radius: 5px;
+}
+
+.qa .title{
+  color: #ffff;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 2px #12659d;
+}
+.qa .question{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+}
+.qa .answer{
+  /* border: red solid 1px; */
+  /* height: 100%; */
+  color: rgba(8, 20, 112, 0.563);
+  height: 100;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.show{
+  height: 0;
+}
+
+.qa .fas{
+  cursor: pointer;
+}
+@media only screen and (max-width: 868px) {
+  .qa{
+    grid-template-columns: 1fr;
+  }
+}

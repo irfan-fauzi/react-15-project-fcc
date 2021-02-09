@@ -27,7 +27,7 @@ export const TourProvider = (props) => {
 
   return (
     <div>
-      <TourContext.Provider value={[tour, setTour, loading]}>
+      <TourContext.Provider value={[tour, loading]}>
         {props.children}
       </TourContext.Provider>
     </div>

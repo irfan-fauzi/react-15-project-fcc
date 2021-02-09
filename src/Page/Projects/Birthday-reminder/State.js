@@ -44,7 +44,7 @@ export const FriendProvider = (props) => {
     ])
   }, [])
   return (
-    <FriendContext.Provider value={[friendList, setFriendList]}>
+    <FriendContext.Provider value={[friendList]}>
       {props.children}
     </FriendContext.Provider>
   )

@@ -3,7 +3,7 @@ import ContactList from './ContactList';
 import { FriendContext } from './State';
 
 function PersonList() {
-  const [friend, setFriend] = useContext(FriendContext);
+  const [friend] = useContext(FriendContext);
   return (
     <>
       <h4>{friend.length} bithday today</h4>
