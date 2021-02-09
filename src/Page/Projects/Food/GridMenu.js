@@ -9,17 +9,37 @@ const GridMenu = () => {
   useEffect(() => {
     setData(Data);
   }, [])
+
+  const [dataFiter, setFilter] = useState([])
+  const [filt, setFilt] = useState(false)
+
+  const filterData = (e) => {
+    if (e.target.value == '') {
+      setFilt(false)
+    } else {
+      let v = data.filter(el => {
+        return el.category == e.target.value;
+      })
+      setFilt(true)
+      setFilter(v)
+    }
+
+  }
+
   return (
     <>
       <h1 className="grid-title">Our Menu</h1>
-      <Filter />
+      <Filter onClick={filterData} />
       <Grid>
-        {
+
+        {!filt ?
           data.map(el => (
+            <Menus key={el.id} title={el.title} price={el.price} img={el.img} desc={el.desc} />
+          )) :
+          dataFiter.map(el => (
             <Menus key={el.id} title={el.title} price={el.price} img={el.img} desc={el.desc} />
           ))
         }
-
       </Grid>
     </>
   )

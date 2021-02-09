@@ -8,15 +8,24 @@ const Menus = ({ img, title, desc, price }) => {
         <img src={img} alt="img" />
       </ImgWrap>
       <div className="text-wrap">
-        <div className="flex">
+        <NamePrice>
           <h3>{title}</h3>
-          <h3>{price}</h3>
-        </div>
+          <h3>${price}</h3>
+        </NamePrice>
         <p>{desc}</p>
       </div>
     </div>
   )
 }
+
+const NamePrice = styled.div`
+      display : flex;
+      justify-content : space-between;
+      margin : 0.3rem 0;
+      color : #4f4d4b;
+      text-transform : capitalize;
+      border-bottom : #bdb8b3 solid 1px;
+`;
 
 const ImgWrap = styled.div`
       /* height : 250px; */
