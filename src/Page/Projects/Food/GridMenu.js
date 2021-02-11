@@ -14,11 +14,11 @@ const GridMenu = () => {
   const [filt, setFilt] = useState(false)
 
   const filterData = (e) => {
-    if (e.target.value == '') {
+    if (e.target.value === '') {
       setFilt(false)
     } else {
       let v = data.filter(el => {
-        return el.category == e.target.value;
+        return el.category === e.target.value;
       })
       setFilt(true)
       setFilter(v)
@@ -46,7 +46,7 @@ const GridMenu = () => {
 }
 
 const Grid = styled.div`
-      border : blue solid 1px;
+      /* border : blue solid 1px; */
       max-width : 1200px;
       margin: auto;
       display : grid;

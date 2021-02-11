@@ -30,12 +30,12 @@ const NamePrice = styled.div`
 const ImgWrap = styled.div`
       /* height : 250px; */
       overflow : hidden;
-      
+      cursor : pointer;
       height : 150px;
       display : flex;
       justify-content : center;
       align-items : center;
-      border : red solid 1px;
+      border-radius : 20px;
 `;
 
 

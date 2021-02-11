@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Data from './Data';
 import Answer from './Answer';
 
 const Question = () => {
-  const [data, setData] = useState(Data);
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    setData(Data)
+  }, [])
+
   const Show = (e) => {
     e.target.parentElement.nextElementSibling.classList.toggle('show')
   }

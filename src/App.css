@@ -130,11 +130,18 @@ img{
 .god-menu .card{
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  border: gold solid 2px;
+  -webkit-box-shadow: 8px 12px 15px -8px rgba(0,0,0,0.5); 
+box-shadow: 8px 12px 15px -8px rgba(0,0,0,0.2);
   
   padding: 10px;
   gap: 10px;
-  
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.god-menu .card:hover{
+  transform: scale(1.02);
+  background: rgb(233, 217, 177);
 }
 @media only screen and (max-width: 868px) {
   .qa{
