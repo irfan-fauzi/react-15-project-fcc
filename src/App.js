@@ -6,7 +6,8 @@ import Birthday from '../src/Page/Projects/Birthday-reminder/index';
 import Tours from './Page/Projects/Tours';
 import question from './Page/Projects/Q&A/question';
 import Food from './Page/Projects/Food';
-import TabsIndex from './Page/Projects/Tabs-Experience';
+import Tabs from './Page/Projects/Tabs-Experience';
+import TabsContekan from './Page/Projects/Tabs-contekan';
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
           <Route path="/tours" component={Tours} />
           <Route path="/qa" component={question} />
           <Route path="/food" component={Food} />
-          <Route path="/tabs" component={TabsIndex} />
+          <Route path="/tabs" component={Tabs} />
+          <Route path="/tabscontek" component={TabsContekan} />
         </Switch>
       </div>
     </Router>

@@ -35,6 +35,11 @@ const HomeIndex = () => {
               <h3>Tabs Experience</h3>
             </Card>
           </Link>
+          <Link to="/tabscontek">
+            <Card>
+              <h3>Tabs Contekan</h3>
+            </Card>
+          </Link>
         </CardContainer>
       </div>
     </div>

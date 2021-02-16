@@ -143,6 +143,28 @@ box-shadow: 8px 12px 15px -8px rgba(0,0,0,0.2);
   transform: scale(1.02);
   background: rgb(233, 217, 177);
 }
+
+.tabs-experience{
+  border: #00c2d4 solid 1px;
+}
+
+.tabs-experience .list-duties{
+  border: #00c2d4 solid 1px;
+  list-style: none;
+  margin: 10px;
+}
+
+
+.tabs-experience .btn{
+  background: #fff;
+  cursor: pointer;
+}
+
+.blue{
+  background: blue;
+  
+}
+
 @media only screen and (max-width: 868px) {
   .qa{
     grid-template-columns: 1fr;
