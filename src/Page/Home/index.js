@@ -40,6 +40,16 @@ const HomeIndex = () => {
               <h3>Tabs Contekan</h3>
             </Card>
           </Link>
+          <Link to="/slider">
+            <Card>
+              <h3>Slider</h3>
+            </Card>
+          </Link>
+          <Link to="/slider-auto">
+            <Card>
+              <h3>Slider auto</h3>
+            </Card>
+          </Link>
         </CardContainer>
       </div>
     </div>

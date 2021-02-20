@@ -1,0 +1,83 @@
+.review-slide {
+  text-align: center;
+}
+
+.review-slide .title {
+  margin: 1rem;
+}
+
+.review-slide .card-review {
+  border: solid #ddd6d6 1px;
+  padding: 1rem;
+  -webkit-box-shadow: 13px 12px 15px -9px rgba(0, 0, 0, 0.32);
+          box-shadow: 13px 12px 15px -9px rgba(0, 0, 0, 0.32);
+  max-width: 400px;
+  margin: auto;
+}
+
+.review-slide .card-review h4 {
+  margin: 1rem;
+  text-transform: uppercase;
+  color: #9b9999;
+}
+
+.review-slide .card-review p {
+  color: #9b9999;
+}
+
+.review-slide .card-review .btn-wrap {
+  margin: 1rem;
+}
+
+.review-slide .card-review .btn-wrap .btn-left,
+.review-slide .card-review .btn-wrap .btn-right {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #bab2b2;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.review-slide .card-review .btn-wrap .btn-left:hover,
+.review-slide .card-review .btn-wrap .btn-right:hover {
+  color: black;
+}
+
+.review-slide .card-review .img-wrap {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.review-slide .card-review .img-wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.review-slide .card-review .img-wrap .quote-icon {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 2.8rem;
+  height: 2.8rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.review-slide .card-review .img-wrap .quote-icon .quote {
+  color: #a8a8e9;
+  font-size: 2.4rem;
+  text-shadow: 5px 6px 2px #e2d3d3;
+}
+
+.review-slide .card-review .img-wrap::after {
+  content: '';
+}
+/*# sourceMappingURL=Main.css.map */

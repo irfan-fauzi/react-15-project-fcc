@@ -8,7 +8,8 @@ import question from './Page/Projects/Q&A/question';
 import Food from './Page/Projects/Food';
 import Tabs from './Page/Projects/Tabs-Experience';
 import TabsContekan from './Page/Projects/Tabs-contekan';
-
+import Slider from './Page/Projects/Slider';
+import SliderAuto from './Page/Projects/SliderAuto';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path="/food" component={Food} />
           <Route path="/tabs" component={Tabs} />
           <Route path="/tabscontek" component={TabsContekan} />
+          <Route path="/slider" component={Slider} />
+          <Route path="/slider-auto" component={SliderAuto} />
         </Switch>
       </div>
     </Router>
