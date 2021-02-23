@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.lorem-generator {
+  margin: auto;
+  max-width: 600px;
+}
+
+.lorem-generator .articles-wrap {
+  margin: 2rem auto;
+  border: red solid 1px;
+}
+
+.lorem-generator .list {
+  margin: 1.5rem;
+  list-style: upper-alpha;
+}
+/*# sourceMappingURL=main.css.map */

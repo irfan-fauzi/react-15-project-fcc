@@ -10,7 +10,9 @@ import Tabs from './Page/Projects/Tabs-Experience';
 import TabsContekan from './Page/Projects/Tabs-contekan';
 import Slider from './Page/Projects/Slider';
 import SliderAuto from './Page/Projects/SliderAuto';
-
+import TextGenerator from './Page/Projects/ParagraphGenerator';
+import SimpleCrud from './Page/Projects/Crud-todo';
+import SimpleCrudContekan from './Page/Projects/Crud-contekan';
 function App() {
   return (
     <Router>
@@ -25,6 +27,9 @@ function App() {
           <Route path="/tabscontek" component={TabsContekan} />
           <Route path="/slider" component={Slider} />
           <Route path="/slider-auto" component={SliderAuto} />
+          <Route path="/lorem-generator" component={TextGenerator} />
+          <Route path="/simple-crud" component={SimpleCrud} />
+          <Route path="/simple-crud-contekan" component={SimpleCrudContekan} />
         </Switch>
       </div>
     </Router>

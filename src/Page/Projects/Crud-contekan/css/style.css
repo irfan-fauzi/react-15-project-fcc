@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+}
+
+.crud-contekan {
+  border: yellow solid 1px;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 10px;
+  color: #787979;
+}
+
+.crud-contekan .clear-btn {
+  background: #e983dd;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.crud-contekan .clear-btn:hover {
+  background: red;
+}
+
+.crud-contekan .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  color: #787979;
+  font-size: 2rem;
+}
+
+.crud-contekan .input-crud {
+  height: 37px;
+  border: none;
+  outline: #41ce41 solid 1px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  color: #8888e8;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+
+.crud-contekan .btn-submit {
+  background: #8f8fda;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.crud-contekan .btn-submit:hover {
+  background: blue;
+}
+
+.crud-contekan .container {
+  margin-top: 2rem;
+}
+
+.crud-contekan .container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  padding: 10px 10px;
+}
+
+.crud-contekan .container .card p {
+  color: #8888e8;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+.crud-contekan .container .card .icon-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.crud-contekan .container .card .icon-wrap .delete,
+.crud-contekan .container .card .icon-wrap .edit {
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.crud-contekan .container .card .icon-wrap .delete:hover,
+.crud-contekan .container .card .icon-wrap .edit:hover {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */

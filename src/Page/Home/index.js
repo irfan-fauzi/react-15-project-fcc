@@ -50,6 +50,21 @@ const HomeIndex = () => {
               <h3>Slider auto</h3>
             </Card>
           </Link>
+          <Link to="/lorem-generator">
+            <Card>
+              <h3>Lorem generator</h3>
+            </Card>
+          </Link>
+          <Link to="/simple-crud">
+            <Card>
+              <h3>Simple Crud</h3>
+            </Card>
+          </Link>
+          <Link to="/simple-crud-contekan">
+            <Card>
+              <h3>Simple Crud Contekan</h3>
+            </Card>
+          </Link>
         </CardContainer>
       </div>
     </div>

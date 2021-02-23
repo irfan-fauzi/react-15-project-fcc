@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.lorem-generator{
+  //border: red solid 1px;
+  margin: auto;
+  max-width: 600px;
+  .articles-wrap{
+    margin: 2rem auto;
+    border: red solid 1px;
+  }
+  .list{
+    margin: 1.5rem;
+    list-style: upper-alpha;
+  }
+}
+
