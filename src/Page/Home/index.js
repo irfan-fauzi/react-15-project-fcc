@@ -57,12 +57,12 @@ const HomeIndex = () => {
           </Link>
           <Link to="/simple-crud">
             <Card>
-              <h3>Simple Crud</h3>
+              <h3>Crud Contekan</h3>
             </Card>
           </Link>
           <Link to="/simple-crud-contekan">
             <Card>
-              <h3>Simple Crud Contekan</h3>
+              <h3>Simple Crud buatan irfan</h3>
             </Card>
           </Link>
         </CardContainer>

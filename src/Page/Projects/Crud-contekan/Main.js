@@ -22,34 +22,39 @@ const Main = () => {
     e.preventDefault();
 
     if (!data) {
+      // display alert
       setAlert({ show: true, msg: 'data kosong', type: 'red' })
-    } else if (data) {
+
+    } else if (data && isEdit) {
+      // deal with edit
+      console.log("deal with edit")
+    }
+
+    else if (data) {
       setStore(store.concat(data))
       setData('')
+      setAlert({ show: false })
     }
   }
 
-  // const Edit = () => {
-  //   setIsEdit(true)
-  //   setData()
-  // }
 
-  // const Delete = () => {
-  //   console.log("delete")
-  // }
 
   const handleEdit = (name) => {
-    console.log(name)
+    //console.log(name)
+    setIsEdit(true)
     setData(name)
+
+
   }
 
 
   return (
     <div className="crud-contekan">
+      {
+        alert.show && <Alert />
+      }
       <form onSubmit={handleSubmit} className="form">
-        {
-          alert && <Alert />
-        }
+
         <input type="text" value={data} onChange={(e) => setData(e.target.value)} className="input-crud" />
         <input type="submit" value={isEdit ? 'edit' : 'submit'} className="btn-submit" />
 

@@ -3,9 +3,9 @@ import React, { useEffect } from 'react';
 
 const Alert = () => {
   return (
-    <div>
-
-    </div>
+    <>
+      <p>alert show</p>
+    </>
   )
 }
 
