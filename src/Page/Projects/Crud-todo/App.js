@@ -1,6 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import List from './List';
 import Alert from './Alert';
+
+// ----------- get Local storege ------
+
+const getLocalStorege = () => {
+  let myStore = localStorage.getItem('store');
+  // if myStore exixst
+  if (myStore) {
+    return JSON.parse(localStorage.getItem('store'))
+  } else {
+    return []
+  }
+}
 
 
 const App = () => {
@@ -8,7 +20,13 @@ const App = () => {
   // state ------------------------
   // main state => storage
   const [data, setData] = useState('');
-  const [store, setStore] = useState([]);
+
+  // versi asli :
+  // const [store, setStore] = useState([]);
+
+  // untuk dapat akses local store :
+  const [store, setStore] = useState(getLocalStorege())
+
 
   const [isEdit, setIsEdit] = useState(false);
   const [editId, setEditId] = useState(null);
@@ -22,7 +40,7 @@ const App = () => {
 
   });
 
-  console.log(editId)
+
 
 
 
@@ -46,15 +64,15 @@ const App = () => {
         store.map(el => {
           if (el.id === editId) {
             return { ...store, title: data }
-
           }
 
           return el
         })
       )
       setData('')
+      // setIsEdit(false)
+      setEditId(null)
       setIsEdit(false)
-      showAlert(true, "success", `${data} berhasil di edit`)
     }
     else {
       // buat objec baru
@@ -102,7 +120,10 @@ const App = () => {
     showAlert(true, 'danger', `${name} telah dihapus`)
   }
 
-
+  // -------- Local Storege ------------
+  useEffect(() => {
+    localStorage.setItem('store', JSON.stringify(store))
+  }, [store])
 
   return (
     <section className="grocery">
