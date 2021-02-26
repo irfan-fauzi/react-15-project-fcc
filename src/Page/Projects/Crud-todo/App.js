@@ -11,7 +11,7 @@ const App = () => {
   const [store, setStore] = useState([]);
 
   const [isEdit, setIsEdit] = useState(false);
-  const [editid, setEditId] = useState(null);
+  const [editId, setEditId] = useState(null);
 
   // utulity state
   const [myAlert, setAlert] = useState({
@@ -22,31 +22,42 @@ const App = () => {
 
   });
 
-  console.log(store)
+  console.log(editId)
+
+
 
   // --------------------------------
   // Event Listeneer
-  const handleClearAll = () => {
 
-  }
-
+  // A. handle submit
   const handleSubmit = (e) => {
     e.preventDefault();
+
     //  1. handle if input is empty
     if (!data) {
       // munculkan pesan error 'text masih kosong'
-      setAlert({
-        show: true,
-        message: "harap di isi terlebih dulu",
-        type: 'red'
-      })
+      showAlert(true, "warning", "data tidak ada")
     }
+
     // 2. handle if you want edit
     // ketika data terisi dan isEdit = true
     else if (data && isEdit) {
+      setStore(
+        store.map(el => {
+          if (el.id === editId) {
+            return { ...store, title: data }
 
+          }
+
+          return el
+        })
+      )
+      setData('')
+      setIsEdit(false)
+      showAlert(true, "success", `${data} berhasil di edit`)
     }
     else {
+      // buat objec baru
       const newItems = {
         id: Math.random(),
         title: data
@@ -54,8 +65,41 @@ const App = () => {
       // isi store
       // bisa pakai concat 
       //  setStore(store.concat(data))
-      setStore([...store, newItems])
+      setStore([...store, newItems]);
+      // setelah data terisi ke store, kosongkan text field
+      setData('')
+      setAlert({ show: false })
+      // tampilkan ke alert
+      showAlert(true, 'success', 'data berhasil di input')
     }
+  }
+
+  // handle edit button
+  const handleEdit = (id) => {
+    const spesifikItem = store.find((el) => el.id === id)
+    //setStore(spesifikItem.title)
+    setIsEdit(true)
+    setEditId(id)
+    setData(spesifikItem.title)
+  }
+  // fungsi alert
+  const showAlert = (show = false, type = "", message = "") => {
+    setAlert({
+      show,
+      type,
+      message
+    })
+  }
+
+  // clear all list
+  const clearList = () => {
+    showAlert(true, 'danger', 'semua data telah dihapus')
+    setStore([])
+  }
+
+  const removeItem = (id, name) => {
+    setStore(store.filter(el => el.id != id))
+    showAlert(true, 'danger', `${name} telah dihapus`)
   }
 
 
@@ -64,7 +108,11 @@ const App = () => {
     <section className="grocery">
       {
         // komponen alert hanya muncul, ketika myAlert.show == true
-        myAlert.show && <Alert msg={myAlert.message} />
+        //  {...myAlert} = membawa semua state alert
+        myAlert.show &&
+        <Alert {...myAlert}
+          removeAlert={showAlert}
+          data={store} />
       }
       <h3 className="title">Pusat grosir</h3>
       <form className="grocery__form" onSubmit={handleSubmit}>
@@ -77,13 +125,19 @@ const App = () => {
           className="btn-form"
           value={isEdit ? 'edit' : 'submit'} />
 
-
       </form>
 
-      <div className="grocery__container">
-        <List />
-        <button className="clear-btn" onClick={handleClearAll}>clearItem</button>
-      </div>
+      {
+        store.length > 0 && (
+          <div className="grocery__container">
+            <List mydata={store}
+              handleEdit={handleEdit}
+              handleDelete={removeItem} />
+            <button className="clear-btn" onClick={clearList}>clearItem</button>
+          </div>
+        )
+      }
+
 
     </section>
   )
