@@ -36,4 +36,119 @@
   --max-width: 1170px;
   --fixed-width: 620px;
 }
+
+.grocery__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.grocery__form .bt-form {
+  background: chartreuse;
+  border: none;
+  padding: 0 20px;
+  color: #f12ab9;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.grocery__form .bt-form:hover {
+  background: #4ee64e;
+  -webkit-transform: scale(0.88);
+          transform: scale(0.88);
+  color: #fff;
+}
+
+.grocery__container .clear-btn {
+  border: none;
+  background: rgba(255, 0, 0, 0.549);
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 2rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.grocery__container .clear-btn:hover {
+  background: red;
+  -webkit-transform: scale(0.88);
+          transform: scale(0.88);
+}
+
+.grocery__container .grocery-list h2 {
+  color: #ff2fee;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.grocery__container .grocery-list .grocery-item {
+  border: #c5d5a7 solid 1px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 10px;
+  color: rgba(233, 12, 97, 0.624);
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.grocery__container .grocery-list .grocery-item .bt-container {
+  width: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grocery__container .grocery-list .grocery-item .bt-container .edit-btn, .grocery__container .grocery-list .grocery-item .bt-container .delete-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.grocery__container .grocery-list .grocery-item .bt-container .edit-btn:hover, .grocery__container .grocery-list .grocery-item .bt-container .delete-btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.grocery__container .grocery-list .grocery-item .bt-container .edit-btn {
+  color: #12aa1f;
+}
+
+.grocery__container .grocery-list .grocery-item .bt-container .delete-btn {
+  color: rgba(255, 0, 0, 0.474);
+}
+
+.grocery__container .grocery-list .grocery-item .bt-container .delete-btn:hover {
+  color: red;
+}
+
+.grocery-title {
+  color: rgba(255, 47, 238, 0.46);
+  font-size: 1.5rem;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */

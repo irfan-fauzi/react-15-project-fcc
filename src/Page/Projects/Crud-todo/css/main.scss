@@ -1,2 +1,94 @@
 @import '_root';
 @import '_global';
+.grocery__form{
+ // border: red solid 1px;
+  display: flex;
+  padding: 10px;
+  .bt-form{
+    background: chartreuse;
+    border: none;
+    padding: 0 20px;
+    color: rgb(241, 42, 185);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    &:hover{
+      background: rgb(78, 230, 78);
+      transform: scale(0.88);
+      color: #fff;
+    }
+  }
+}
+.grocery__container{
+  //border: green solid 1px;
+  .clear-btn{
+    border: none;
+    background: rgba(255, 0, 0, 0.549);
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 2rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    &:hover{
+      background: red;
+      transform: scale(0.88);
+    }
+  }
+  .grocery-list{
+    h2{
+      color: rgb(255, 47, 238);
+      text-align: center;
+      letter-spacing: 2px;
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+    .grocery-item{
+      border: rgb(197, 213, 167) solid 1px;
+      margin: 10px;
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 10px;
+      color: rgba(233, 12, 97, 0.624);
+      font-weight: bold;
+      border-radius: 10px;
+      .bt-container{
+        //border: yellowgreen solid 1px;
+        width: 50px;
+        justify-content: space-between;
+        display: flex;
+        .edit-btn, .delete-btn{
+          background: none;
+          border: none;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: 0.2s ease-in-out;
+          &:hover{
+            transform: scale(1.20);
+          }
+        }
+        .edit-btn{
+          color: rgb(18, 170, 31);
+        }
+        .delete-btn{
+          color: rgba(255, 0, 0, 0.474);
+          &:hover{
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
+.grocery-title{
+  color: rgba(255, 47, 238, 0.46);
+  font-size: 1.5rem;
+  text-align: center;
+}

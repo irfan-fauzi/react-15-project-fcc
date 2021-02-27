@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import List from './List';
 import Alert from './Alert';
+import styled from 'styled-components';
 
 // ----------- get Local storege ------
 
@@ -126,7 +127,7 @@ const App = () => {
   }, [store])
 
   return (
-    <section className="grocery">
+    <MainSection>
       {
         // komponen alert hanya muncul, ketika myAlert.show == true
         //  {...myAlert} = membawa semua state alert
@@ -135,15 +136,14 @@ const App = () => {
           removeAlert={showAlert}
           data={store} />
       }
-      <h3 className="title">Pusat grosir</h3>
+      <h3 className="grocery-title">Pusat grosir</h3>
       <form className="grocery__form" onSubmit={handleSubmit}>
 
-        <input type="text"
+        <TextField type="text"
           onChange={(e) => setData(e.target.value)}
-          value={data}
-          className="input-form" />
+          value={data} />
         <input type="submit"
-          className="btn-form"
+          className="bt-form"
           value={isEdit ? 'edit' : 'submit'} />
 
       </form>
@@ -160,8 +160,24 @@ const App = () => {
       }
 
 
-    </section>
+    </MainSection>
   )
 }
+
+const MainSection = styled.section`
+  border: lightblue solid 1px;
+  max-width : 600px;
+  margin : 2rem auto;
+  padding : 10px;
+`;
+const TextField = styled.input`
+  border : green solid 1px;
+  //outline : blue solid 1px;
+  width : 100%;
+  height: 40px;
+  padding : 10px;
+  font-size : 1.3rem;
+  color : rgb(241, 42, 185);
+`;
 
 export default App
