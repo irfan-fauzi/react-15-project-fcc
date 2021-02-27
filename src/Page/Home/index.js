@@ -65,6 +65,11 @@ const HomeIndex = () => {
               <h3>Simple Crud buatan irfan</h3>
             </Card>
           </Link>
+          <Link to="/navbar-react">
+            <Card>
+              <h3>Navbar React</h3>
+            </Card>
+          </Link>
         </CardContainer>
       </div>
     </div>

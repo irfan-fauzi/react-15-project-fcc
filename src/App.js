@@ -13,6 +13,8 @@ import SliderAuto from './Page/Projects/SliderAuto';
 import TextGenerator from './Page/Projects/ParagraphGenerator';
 import SimpleCrud from './Page/Projects/Crud-todo';
 import SimpleCrudContekan from './Page/Projects/Crud-contekan';
+import NavbarReact from './Page/Projects/Navbar-react/';
+
 function App() {
   return (
     <Router>
@@ -30,6 +32,7 @@ function App() {
           <Route path="/lorem-generator" component={TextGenerator} />
           <Route path="/simple-crud" component={SimpleCrud} />
           <Route path="/simple-crud-contekan" component={SimpleCrudContekan} />
+          <Route path="/navbar-react" component={NavbarReact} />
         </Switch>
       </div>
     </Router>
