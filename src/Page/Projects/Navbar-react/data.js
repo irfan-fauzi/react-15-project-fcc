@@ -24,17 +24,18 @@ export const links = [
   {
     id: 5,
     url: '/profile',
-    text: 'profile',
+    text: 'profile saya',
   },
+
 ]
 
 export const social = [
   {
     id: 1,
-    url: 'https://www.twitter.com',
+    url: 'https://www.facebook.com',
     icon: <FaFacebook />,
   },
-  
+
   {
     id: 2,
     url: 'https://www.twitter.com',
@@ -42,7 +43,7 @@ export const social = [
   },
   {
     id: 3,
-    url: 'https://www.twitter.com',
+    url: 'https://www.linkdin.com',
     icon: <FaLinkedin />,
   },
   {
