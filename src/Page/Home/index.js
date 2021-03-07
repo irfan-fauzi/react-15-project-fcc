@@ -70,6 +70,11 @@ const HomeIndex = () => {
               <h3>Navbar React</h3>
             </Card>
           </Link>
+          <Link to="/modal-react">
+            <Card>
+              <h3>Modal React</h3>
+            </Card>
+          </Link>
         </CardContainer>
       </div>
     </div>

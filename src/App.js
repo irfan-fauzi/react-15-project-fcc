@@ -14,6 +14,7 @@ import TextGenerator from './Page/Projects/ParagraphGenerator';
 import SimpleCrud from './Page/Projects/Crud-todo';
 import SimpleCrudContekan from './Page/Projects/Crud-contekan';
 import NavbarReact from './Page/Projects/Navbar-react/';
+import ModalReact from './Page/Projects/Modal';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/simple-crud" component={SimpleCrud} />
           <Route path="/simple-crud-contekan" component={SimpleCrudContekan} />
           <Route path="/navbar-react" component={NavbarReact} />
+          <Route path="/modal-react" component={ModalReact} />
         </Switch>
       </div>
     </Router>

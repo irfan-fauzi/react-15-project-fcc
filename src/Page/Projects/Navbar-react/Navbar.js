@@ -11,17 +11,18 @@ const Navbar = () => {
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
 
-  console.log(showLinks)
-  // yseeffec
+  
+  // 
   useEffect(() => {
     // atur tinggi container
     const linksHeight = linksRef.current.getBoundingClientRect().height;
-    //console.log(linksHeight)
+    // console.log(linksHeight)
 
     // jika togle di klik (showlink true)
     if (showLinks) {
       // edit komponen css tsb
-      linksContainerRef.current.style.height = `${linksHeight}px`
+      linksContainerRef.current.style.height = `${linksHeight}px`;
+
     } else {
       linksContainerRef.current.style.height = `0px`
     }
